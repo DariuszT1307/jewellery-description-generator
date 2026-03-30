@@ -12,6 +12,9 @@ function App() {
   })
   
   const [payload, setPayload] = useState(null)
+  const [generatedResult, setGeneratedResult] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
   const productTypes = [
     { value: 'necklace', label: 'Naszyjnik' },
@@ -47,7 +50,7 @@ function App() {
     }))
   }
 
-  const handleGeneratePayload = (e) => {
+  const handleGeneratePayload = async (e) => {
     e.preventDefault()
     
     if (!formData.productName.trim()) {
@@ -55,7 +58,7 @@ function App() {
       return
     }
 
-    const payload = {
+    const requestBody = {
       productType: formData.productType,
       stone: formData.stone,
       productName: formData.productName,
@@ -68,18 +71,37 @@ function App() {
       }))
     }
 
-    setPayload(payload)
+    setPayload(requestBody)
+    setError(null)
+    setGeneratedResult(null)
+    setLoading(true)
+
+    try {
+      const response = await fetch('http://127.0.0.1:8000/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestBody)
+      })
+
+      if (!response.ok) {
+        throw new Error('Błąd serwera: ' + response.status)
+      }
+
+      const data = await response.json()
+      setGeneratedResult(data)
+    } catch (err) {
+      setError(err.message || 'Nie udało się wygenerować opisu')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
     <div className="app-container">
-      <header className="app-header">
-        <h1>Generator opisów biżuterii</h1>
-        <p>Utwórz profesjonalny opis produktu w kilka sekund</p>
-      </header>
-
       <main className="app-main">
-        <form onSubmit={handleGeneratePayload} className="form-container">
+        <form onSubmit={handleGeneratePayload} className="form-container dark-form">
           <div className="form-group">
             <label htmlFor="productType">Typ produktu *</label>
             <select
@@ -184,77 +206,27 @@ function App() {
             <pre>{JSON.stringify(payload, null, 2)}</pre>
           </div>
         )}
+
+        {loading && <p>Trwa generowanie opisu...</p>}
+        {error && <p style={{ color: '#ff6b6b' }}>Błąd: {error}</p>}
+
+        {generatedResult && (
+          <div className="payload-preview">
+            <h2>Wynik wygenerowanego opisu</h2>
+            <h3>{generatedResult.title}</h3>
+            <p>{generatedResult.shortDescription}</p>
+            <ul>
+              {generatedResult.bullets.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+            <p>{generatedResult.longDescription}</p>
+            <h4>Specyfikacja</h4>
+            <pre>{JSON.stringify(generatedResult.specs, null, 2)}</pre>
+          </div>
+        )}
       </main>
     </div>
-  )
-}
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
   )
 }
 

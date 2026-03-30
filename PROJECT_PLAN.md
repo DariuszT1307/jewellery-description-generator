@@ -18,6 +18,22 @@ To NIE jest uniwersalny asystent AI.
 
 To jest aplikacja do jednego, konkretnego zadania: generowania opisów produktów.
 
+## Zasady
+- zawsze najpierw przeczytaj PROJECT_PLAN.md
+- pracuj etapami
+- nie wychodź poza aktualny etap
+- preferuj prostotę
+- nie używaj TypeScript
+- nie buduj backendu, jeśli aktualny task dotyczy frontendu
+- nie dodawaj zbędnych bibliotek
+- po każdej zmianie krótko opisz co zmieniłeś
+
+## Aktualny etap
+Na ten moment realizujemy etap 2.
+
+## Pliki referencyjne
+- PROJECT_PLAN.md zawiera plan całego projektu
+
 ---
 
 ## Kontekst biznesowy
@@ -126,13 +142,21 @@ Po gotowym frontendzie budujemy prosty backend.
 Stworzyć bardzo prosty backend API, który:
 - przyjmie dane z formularza,
 - zweryfikuje wejście,
-- zwróci mock odpowiedź JSON.
+- zwróci mock odpowiedź JSON w docelowym formacie opisu.
 
 ### Backend MVP ma:
 - działać lokalnie,
 - mieć jeden główny endpoint,
 - przyjmować request JSON,
 - zwracać response JSON.
+- Produkuje konkretną strukturę opisu:
+  - title
+  - shortDescription
+  - bullets (lista atrybutów)
+  - longDescription
+  - specs (kamień, metal, rozmiar, opcjonalnie zdjęcia)
+  - source (oryginalne dane wejściowe)
+  - status
 
 ### Preferowana technologia
 - Python

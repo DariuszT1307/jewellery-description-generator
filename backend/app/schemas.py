@@ -15,6 +15,10 @@ class GenerateRequest(BaseModel):
     images: Optional[List[ImageMeta]] = None
 
 class GenerateResponse(BaseModel):
-    generatedDescription: str
+    title: str
+    shortDescription: str
+    bullets: List[str]
+    longDescription: str
+    specs: dict
     source: GenerateRequest
     status: str = "success"
