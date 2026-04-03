@@ -57,6 +57,7 @@ Frontend MVP:
 
 ### Etap 2
 Backend MVP:
+- instrukcje zwiazane z backendem sprawdz w BACKEND_INSTRUCTIONS.md
 - proste API
 - przyjęcie danych z formularza
 - walidacja wejścia
