@@ -1,0 +1,35 @@
+{
+  "name": "Karneol",
+  "name_en": "Carnelian",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "pomarańczowy",
+    "shades": ["blady pomarańcz", "intensywny pomarańcz", "czerwono-pomarańczowy", "ceglasty"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Indie", "Brazylia", "Urugwaj", "Madagaskar", "Egipt"],
+  "metaphysical": {
+    "chakra": ["sakralna", "podstawna"],
+    "meaning": ["motywacja", "odwaga", "twórczość", "działanie", "witalność"],
+    "healing": "pobudza energię życiową, wspiera twórczość i motywację, dodaje odwagi do działania, wzmacnia pewność siebie"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["długa ekspozycja na słońce (blednie)", "silne detergenty"],
+    "storage": "oddzielnie, z dala od bezpośredniego słońca"
+  },
+  "keywords": [
+    "motywacja", "energia", "twórczość", "działanie", "odwaga",
+    "witalność", "pasja", "entuzjazm", "kreatywność", "siła"
+  ],
+  "price_range": {
+    "low": "bardzo dostępny",
+    "high": "niska półka"
+  },
+  "common_cuts": ["kaboszon", "paciorek", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["miedź", "złoto", "mosiądz"],
+    "other_stones": ["tygrysie oko", "cytryn", "kryształ górski", "agat czerwony"]
+  },
+  "zodiac": ["Rak", "Lew", "Byk", "Baran"]
+}

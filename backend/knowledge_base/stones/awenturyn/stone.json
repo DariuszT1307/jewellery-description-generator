@@ -1,0 +1,35 @@
+{
+  "name": "Awenturyn",
+  "name_en": "Aventurine",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "zielony",
+    "shades": ["jasna zieleń", "głęboka zieleń z połyskiem", "miętowy", "butelkowa zieleń"]
+  },
+  "hardness_mohs": 6.5,
+  "origin": ["Indie", "Brazylia", "Rosja", "Austria", "Tanzania"],
+  "metaphysical": {
+    "chakra": ["sercowa"],
+    "meaning": ["szczęście", "dobrobyt", "harmonia", "serce", "możliwości"],
+    "healing": "przyciąga szczęście i nowe możliwości, otwiera serce na miłość i wdzięczność, wspiera optymizm i motywację"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["długa ekspozycja na słońce (blaknie)", "silne detergenty"],
+    "storage": "oddzielnie, z dala od twardszych kamieni"
+  },
+  "keywords": [
+    "szczęście", "dobrobyt", "serce", "optymizm", "możliwości",
+    "harmonia", "natura", "spokój", "wzrost", "obfitość"
+  ],
+  "price_range": {
+    "low": "bardzo dostępny",
+    "high": "niska półka"
+  },
+  "common_cuts": ["kaboszon", "paciorek", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["miedź", "srebro", "złoto"],
+    "other_stones": ["kwarc różowy", "jadeit", "cytryn", "malachit"]
+  },
+  "zodiac": ["Byk", "Waga", "Panna", "Rak"]
+}

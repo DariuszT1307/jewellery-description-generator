@@ -1,0 +1,35 @@
+{
+  "name": "Lapis Lazuli",
+  "name_en": "Lapis Lazuli",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "intensywnie niebieski",
+    "shades": ["głęboki kobalt", "królewski niebieski", "granatowy ze złotymi plamkami pirytu", "niebieski z białymi żyłami kalcytu"]
+  },
+  "hardness_mohs": 5.5,
+  "origin": ["Afganistan", "Chile", "Rosja", "Pakistan"],
+  "metaphysical": {
+    "chakra": ["gardłowa", "trzecie oko"],
+    "meaning": ["prawda", "mądrość", "komunikacja", "intuicja", "wewnętrzna siła"],
+    "healing": "wspiera szczerą komunikację, pobudza intuicję i mądrość, pomaga wyrażać prawdę, wzmacnia samoświadomość"
+  },
+  "care": {
+    "cleaning": "wilgotna miękka ściereczka, BEZ moczenia",
+    "avoid": ["woda (miękki kamień)", "kwasy", "ultradźwięki", "para wodna", "słońce (blaknie)"],
+    "storage": "oddzielnie, w miękkiej tkaninie – delikatny kamień"
+  },
+  "keywords": [
+    "mądrość", "komunikacja", "prawda", "intuicja", "głębia",
+    "królewskość", "duchowość", "świadomość", "wyrażanie siebie"
+  ],
+  "price_range": {
+    "low": "średnia półka",
+    "high": "wyższa półka (afganistański)"
+  },
+  "common_cuts": ["kaboszon", "paciorek", "płytka", "rzeźbiony"],
+  "pairings": {
+    "metals": ["złoto", "srebro", "miedź"],
+    "other_stones": ["kryształ górski", "ametyst", "turkus", "perła"]
+  },
+  "zodiac": ["Strzelec", "Ryby", "Waga", "Bliźnięta"]
+}

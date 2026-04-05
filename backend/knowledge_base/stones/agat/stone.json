@@ -1,0 +1,35 @@
+{
+  "name": "Agat",
+  "name_en": "Agate",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "wielobarwny",
+    "shades": ["brązowy", "czerwony", "szary", "niebieski", "biały", "czarny"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Brazylia", "Indie", "USA", "Niemcy", "Maroko", "Urugwaj"],
+  "metaphysical": {
+    "chakra": ["podstawna", "sakralna"],
+    "meaning": ["ochrona", "równowaga", "siła", "uziemienie", "stabilizacja"],
+    "healing": "stabilizuje aurę, usuwa negatywną energię, wzmacnia pewność siebie i odwagę"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["silne chemikalia", "długa ekspozycja na słońce (odbarwia)"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "ochrona", "uziemienie", "równowaga", "stabilność", "siła",
+    "odwaga", "harmonia", "skupienie", "pewność siebie"
+  ],
+  "price_range": {
+    "low": "bardzo dostępny",
+    "high": "niska-średnia półka"
+  },
+  "common_cuts": ["kaboszon", "plaster", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["miedź", "srebro", "złoto"],
+    "other_stones": ["kryształ górski", "obsydian", "karneol", "tygrysie oko"]
+  },
+  "zodiac": ["Bliźnięta", "Koziorożec", "Strzelec", "Panna"]
+}

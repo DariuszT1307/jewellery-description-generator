@@ -1,0 +1,35 @@
+{
+  "name": "Jadeit",
+  "name_en": "Jade",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "zielony",
+    "shades": ["jasna zieleń", "głęboka zieleń imperatorska", "biały", "lawenda"]
+  },
+  "hardness_mohs": 6.5,
+  "origin": ["Mjanma (Birma)", "Chiny", "Gwatemala", "Nowa Zelandia"],
+  "metaphysical": {
+    "chakra": ["sercowa"],
+    "meaning": ["dobrobyt", "harmonia", "ochrona", "szczęście", "mądrość"],
+    "healing": "przyciąga dobrobyt i szczęście, harmonizuje emocje, wspiera serce i system odpornościowy"
+  },
+  "care": {
+    "cleaning": "ciepła woda z delikatnym mydłem, miękka ściereczka",
+    "avoid": ["silne detergenty", "ultradźwięki", "gwałtowne zmiany temperatury"],
+    "storage": "oddzielnie, w miękkiej tkaninie"
+  },
+  "keywords": [
+    "dobrobyt", "harmonia", "szczęście", "ochrona", "równowaga",
+    "serce", "mądrość", "spokój", "cesarki", "longevity"
+  ],
+  "price_range": {
+    "low": "dostępny (nefryt)",
+    "high": "wysoka półka (jadeit imperatorski)"
+  },
+  "common_cuts": ["kaboszon", "rzeźbiony", "surowy"],
+  "pairings": {
+    "metals": ["złoto", "srebro", "miedź"],
+    "other_stones": ["kwarc różowy", "awenturyn", "malachit", "cytryn"]
+  },
+  "zodiac": ["Byk", "Waga", "Koziorożec", "Panna"]
+}

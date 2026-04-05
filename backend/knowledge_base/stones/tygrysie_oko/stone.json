@@ -1,0 +1,35 @@
+{
+  "name": "Tygrysie Oko",
+  "name_en": "Tiger's Eye",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "złoto-brązowy",
+    "shades": ["miodowy brąz", "złoty", "ciemny brąz", "rdzawy"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Republika Południowej Afryki", "Australia", "Indie", "Brazylia", "Namibia"],
+  "metaphysical": {
+    "chakra": ["splot słoneczny", "sakralna", "podstawna"],
+    "meaning": ["odwaga", "pewność siebie", "ochrona", "działanie", "siła woli"],
+    "healing": "wzmacnia determinację, pomaga w podejmowaniu decyzji, chroni przed negatywną energią, przyciąga dobrobyt"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka ściereczka",
+    "avoid": ["silne chemikalia", "ultradźwięki", "długa ekspozycja na słońce"],
+    "storage": "oddzielnie, zapobiega zarysowaniom"
+  },
+  "keywords": [
+    "odwaga", "działanie", "pewność siebie", "ochrona", "siła",
+    "determinacja", "dobrobyt", "focus", "wola", "talizman"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "niska-średnia półka"
+  },
+  "common_cuts": ["kaboszon", "paciorek", "surowy", "plaster"],
+  "pairings": {
+    "metals": ["miedź", "złoto", "mosiądz"],
+    "other_stones": ["obsydian", "karneol", "agat", "kryształ górski"]
+  },
+  "zodiac": ["Lew", "Koziorożec", "Byk", "Baran"]
+}

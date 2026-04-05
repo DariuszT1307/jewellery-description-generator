@@ -22,3 +22,11 @@ class GenerateResponse(BaseModel):
     specs: dict
     source: GenerateRequest
     status: str = "success"
+
+class StoneOption(BaseModel):
+    value: str
+    label: str
+    label_en: str
+
+class StonesResponse(BaseModel):
+    stones: List[StoneOption]

@@ -1,0 +1,35 @@
+{
+  "name": "Ametyst",
+  "name_en": "Amethyst",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "fioletowy",
+    "shades": ["jasny lila", "głęboki fiolet", "purpurowy"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Brazylia", "Urugwaj", "Zambia", "Polska (Sudety)"],
+  "metaphysical": {
+    "chakra": ["trzecie oko", "koronny"],
+    "meaning": ["spokój", "intuicja", "duchowość", "ochrona"],
+    "healing": "uspokaja umysł, wspiera medytację, redukuje stres"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["bezpośrednie słońce (może wyblaknąć)", "silne detergenty"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "duchowy", "medytacyjny", "spokojny", "intuicyjny",
+    "ochronny", "harmonijny", "uziemiający"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "średnia półka"
+  },
+  "common_cuts": ["kaboszon", "fasetowany", "surowy"],
+  "pairings": {
+    "metals": ["srebro", "miedź"],
+    "other_stones": ["kwarc różowy", "cytryn", "kwarc dymny"]
+  },
+  "zodiac": ["Ryby", "Wodnik", "Koziorożec", "Strzelec"]
+}

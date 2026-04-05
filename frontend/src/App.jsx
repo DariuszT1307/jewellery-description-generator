@@ -1,37 +1,50 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+
+const API_BASE = 'http://127.0.0.1:8000'
 
 function App() {
   const [formData, setFormData] = useState({
-    productType: 'necklace',
-    stone: 'amethyst',
+    productType: 'bracelet',
+    stone: '',
     productName: '',
     keywords: '',
     notes: '',
     images: []
   })
-  
+
+  const [stones, setStones] = useState([])
+  const [stonesLoading, setStonesLoading] = useState(true)
+  const [stonesError, setStonesError] = useState(null)
+
   const [payload, setPayload] = useState(null)
   const [generatedResult, setGeneratedResult] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+
+  useEffect(() => {
+    fetch(`${API_BASE}/stones`)
+      .then(res => {
+        if (!res.ok) throw new Error(`Błąd serwera: ${res.status}`)
+        return res.json()
+      })
+      .then(data => {
+        setStones(data.stones)
+        if (data.stones.length > 0) {
+          setFormData(prev => ({ ...prev, stone: data.stones[0].value }))
+        }
+      })
+      .catch(err => {
+        setStonesError(err.message || 'Nie udało się pobrać listy kamieni')
+      })
+      .finally(() => setStonesLoading(false))
+  }, [])
 
   const productTypes = [
     { value: 'necklace', label: 'Naszyjnik' },
     { value: 'ring', label: 'Pierścionek' },
     { value: 'bracelet', label: 'Bransoletka' },
     { value: 'earrings', label: 'Kolczyki' }
-  ]
-
-  const stones = [
-    { value: 'amethyst', label: 'Ametyst' },
-    { value: 'rose_quartz', label: 'Kwarc różowy' },
-    { value: 'citrine', label: 'Cytryn' },
-    { value: 'clear_quartz', label: 'Kwarc przejrzysty' },
-    { value: 'obsidian', label: 'Obsydian' },
-    { value: 'lapis_lazuli', label: 'Lazuryt' },
-    { value: 'malachite', label: 'Malachit' },
-    { value: 'tourmaline', label: 'Turmalin' }
   ]
 
   const handleInputChange = (e) => {
@@ -77,7 +90,7 @@ function App() {
     setLoading(true)
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/generate', {
+      const response = await fetch(`${API_BASE}/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -121,19 +134,37 @@ function App() {
 
           <div className="form-group">
             <label htmlFor="stone">Kamień *</label>
-            <select
-              id="stone"
-              name="stone"
-              value={formData.stone}
-              onChange={handleInputChange}
-              required
-            >
-              {stones.map(stone => (
-                <option key={stone.value} value={stone.value}>
-                  {stone.label}
-                </option>
-              ))}
-            </select>
+            {stonesLoading ? (
+              <select disabled><option>Ładowanie kamieni...</option></select>
+            ) : stonesError ? (
+              <div>
+                <select disabled><option>Błąd ładowania</option></select>
+                <span style={{ color: '#ff6b6b', fontSize: '0.85rem' }}>
+                  {stonesError} —{' '}
+                  <button
+                    type="button"
+                    onClick={() => window.location.reload()}
+                    style={{ background: 'none', border: 'none', color: '#ff6b6b', cursor: 'pointer', textDecoration: 'underline', padding: 0 }}
+                  >
+                    odśwież
+                  </button>
+                </span>
+              </div>
+            ) : (
+              <select
+                id="stone"
+                name="stone"
+                value={formData.stone}
+                onChange={handleInputChange}
+                required
+              >
+                {stones.map(stone => (
+                  <option key={stone.value} value={stone.value}>
+                    {stone.label}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
 
           <div className="form-group">

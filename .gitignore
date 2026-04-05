@@ -1,4 +1,6 @@
 backend/.env
+backend/.claude/.env
+backend/.claude/settings.local.json
 backend/__pycache__/
 frontend/node_modules/
 .vite/

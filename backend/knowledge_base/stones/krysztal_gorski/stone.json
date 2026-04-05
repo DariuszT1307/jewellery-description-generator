@@ -1,0 +1,35 @@
+{
+  "name": "Kryształ Górski",
+  "name_en": "Clear Quartz",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "bezbarwny",
+    "shades": ["przezroczysty", "biały mleczny", "lodowy", "kryształowo czysty"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Brazylia", "USA", "Madagaskar", "Chiny", "Szwajcaria (Alpy)"],
+  "metaphysical": {
+    "chakra": ["wszystkie", "koronna"],
+    "meaning": ["czystość", "jasność umysłu", "wzmocnienie energii", "programowanie intencji", "uzdrowienie"],
+    "healing": "wzmacnia działanie wszystkich kamieni, oczyszcza energię, wzmacnia intencje, poprawia koncentrację i jasność myślenia"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem lub oczyszczanie w strumieniu wody",
+    "avoid": ["silne chemikalia", "gwałtowne zmiany temperatury"],
+    "storage": "bezpiecznie – bardzo odporny, unikać zarysowań"
+  },
+  "keywords": [
+    "czystość", "jasność", "wzmocnienie", "intencja", "energia",
+    "uzdrowienie", "programowanie", "ochrona", "oczyszczanie", "universalny"
+  ],
+  "price_range": {
+    "low": "bardzo dostępny",
+    "high": "niska półka (surowy), wyższa (wysokiej jakości fasetowany)"
+  },
+  "common_cuts": ["surowy", "fasetowany", "paciorek", "kaboszon", "cluster"],
+  "pairings": {
+    "metals": ["srebro", "miedź", "złoto"],
+    "other_stones": ["wszystkie kamienie – wzmacnia ich działanie"]
+  },
+  "zodiac": ["wszystkie znaki zodiaku", "szczególnie: Baran", "Lew", "Strzelec"]
+}
