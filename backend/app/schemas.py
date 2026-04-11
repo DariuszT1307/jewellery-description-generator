@@ -9,6 +9,7 @@ class ImageMeta(BaseModel):
 class GenerateRequest(BaseModel):
     productType: constr(min_length=1)
     stone: constr(min_length=1)
+    stone2: Optional[str] = None
     productName: constr(min_length=1)
     keywords: Optional[str] = None
     notes: Optional[str] = None
@@ -17,9 +18,7 @@ class GenerateRequest(BaseModel):
 class GenerateResponse(BaseModel):
     title: str
     shortDescription: str
-    bullets: List[str]
     longDescription: str
-    specs: dict
     source: GenerateRequest
     status: str = "success"
 

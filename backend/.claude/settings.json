@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command ':*)",
+      "Bash(pip install:*)",
+      "Bash(python -c ':*)",
+      "Read(//c/Users/HP/Desktop/Etsy Ilonka/jewellery-description-generator/**)",
+      "Bash(python gen_examples.py)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\HP\\Desktop\\Etsy Ilonka\\jewellery-description-generator"
+    ]
+  }
+}

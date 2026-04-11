@@ -1,0 +1,35 @@
+{
+  "name": "Topaz",
+  "name_en": "Topaz",
+  "category": "szlachetny",
+  "color": {
+    "primary": "niebieski",
+    "shades": ["błękitny (blue topaz)", "złocisty (imperial topaz)", "bezbarwny", "różowy", "brązowy"]
+  },
+  "hardness_mohs": 8,
+  "origin": ["Brazylia", "Rosja", "Pakistan", "Nigeria", "Meksyk", "USA"],
+  "metaphysical": {
+    "chakra": ["gardłowa (niebieski)", "splot słoneczny (złocisty)"],
+    "meaning": ["prawda", "klarowność", "komunikacja", "obfitość", "uzdrowienie", "manifestacja"],
+    "healing": "wspiera komunikację i wyrażanie własnej prawdy, przynosi klarowność umysłu i pomaga w manifestowaniu zamierzeń"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["nagłe zmiany temperatury", "silne chemikalia", "ultradźwięki"],
+    "storage": "oddzielnie, w miękkiej tkaninie"
+  },
+  "keywords": [
+    "klarowność", "prawda", "komunikacja", "obfitość", "spokój",
+    "uzdrowienie", "manifestacja", "pewność siebie", "harmonia"
+  ],
+  "price_range": {
+    "low": "dostępny (niebieski topaz)",
+    "high": "wysoka półka (imperial topaz)"
+  },
+  "common_cuts": ["fasetowany", "kaboszon", "surowy"],
+  "pairings": {
+    "metals": ["srebro", "złoto", "miedź"],
+    "other_stones": ["ametyst", "kryształ górski", "akwamaryn", "cytryn"]
+  },
+  "zodiac": ["Strzelec", "Skorpion", "Ryby", "Bliźnięta"]
+}

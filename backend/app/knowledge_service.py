@@ -48,6 +48,26 @@ STONE_FOLDER: dict[str, str] = {
     "malachit": "malachit",
     "tourmaline": "turmalin",
     "turmalin": "turmalin",
+    # nowe kamienie
+    "zoisyt z rubinem": "zoisyt_z_rubinem",
+    "zoisyt_z_rubinem": "zoisyt_z_rubinem",
+    "ruby in zoisite": "zoisyt_z_rubinem",
+    "anyolite": "zoisyt_z_rubinem",
+    "szmaragd": "szmaragd",
+    "emerald": "szmaragd",
+    "turkus": "turkus",
+    "turquoise": "turkus",
+    "jaspis": "jaspis",
+    "jasper": "jaspis",
+    "amazonit": "amazonit",
+    "amazonite": "amazonit",
+    "topaz": "topaz",
+    "labradoryt": "labradoryt",
+    "labradorite": "labradoryt",
+    "kamień księżycowy": "kamien_ksiezycowy",
+    "kamien ksiezycowy": "kamien_ksiezycowy",
+    "kamien_ksiezycowy": "kamien_ksiezycowy",
+    "moonstone": "kamien_ksiezycowy",
 }
 
 # Mapowanie typów produktów → nazwa folderu w examples/
@@ -131,37 +151,59 @@ def get_stone_data(stone: str) -> Optional[dict]:
         return json.load(f)
 
 
-def get_examples(product_type: str, stone: str, max_examples: int = 2) -> list[dict]:
+def get_examples(
+    product_type: str,
+    stone: str,
+    stone2: Optional[str] = None,
+    max_examples: int = 2,
+) -> list[dict]:
     """
-    Zwraca listę przykładowych opisów z knowledge_base/examples/{product}/{stone_*}/.
+    Zwraca przykłady dla danej kombinacji kamieni.
+    Przy 2 kamieniach szuka folderu {stone1}_{stone2}_XX,
+    a następnie fallback na przykłady stone1.
     """
     product_folder = _product_key(product_type)
-    stone_prefix = _stone_key(stone)
+    stone1_key = _stone_key(stone)
     examples_root = KNOWLEDGE_BASE_DIR / "examples" / product_folder
 
     if not examples_root.exists():
         logger.info("Brak folderu przykładów: %s", examples_root)
         return []
 
+    # Priorytety wyszukiwania
+    search_prefixes: list[str] = []
+    if stone2:
+        stone2_key = _stone_key(stone2)
+        search_prefixes.append(f"{stone1_key}_{stone2_key}")
+        search_prefixes.append(f"{stone2_key}_{stone1_key}")
+    search_prefixes.append(stone1_key)
+
     examples: list[dict] = []
-    for subfolder in sorted(examples_root.iterdir()):
-        if not subfolder.is_dir() or not subfolder.name.startswith(stone_prefix):
+    seen_prefixes: set[str] = set()
+
+    for prefix in search_prefixes:
+        if prefix in seen_prefixes:
             continue
-        for json_file in sorted(subfolder.glob("*.json")):
-            try:
-                with json_file.open(encoding="utf-8") as f:
-                    examples.append(json.load(f))
-                if len(examples) >= max_examples:
-                    return examples
-            except json.JSONDecodeError:
-                logger.warning("Niepoprawny JSON w przykładzie: %s", json_file)
+        seen_prefixes.add(prefix)
+        for subfolder in sorted(examples_root.iterdir()):
+            if not subfolder.is_dir() or not subfolder.name.startswith(prefix):
+                continue
+            for json_file in sorted(subfolder.glob("*.json")):
+                try:
+                    with json_file.open(encoding="utf-8") as f:
+                        examples.append(json.load(f))
+                    if len(examples) >= max_examples:
+                        return examples
+                except json.JSONDecodeError:
+                    logger.warning("Niepoprawny JSON w przykładzie: %s", json_file)
 
     return examples
 
 
-def get_context(product_type: str, stone: str) -> dict:
-    """Zwraca pełny kontekst (dane kamienia + przykłady) dla danego produktu."""
+def get_context(product_type: str, stone: str, stone2: Optional[str] = None) -> dict:
+    """Zwraca pełny kontekst (dane kamieni + przykłady) dla danego produktu."""
     return {
         "stone_data": get_stone_data(stone),
-        "examples": get_examples(product_type, stone),
+        "stone2_data": get_stone_data(stone2) if stone2 else None,
+        "examples": get_examples(product_type, stone, stone2),
     }

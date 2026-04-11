@@ -1,0 +1,35 @@
+{
+  "name": "Turmalin",
+  "name_en": "Tourmaline",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "czarny",
+    "shades": ["czarny (schorl)", "różowy", "zielony", "arbuzowy (zielono-różowy)", "niebieski (indigolite)"]
+  },
+  "hardness_mohs": 7.5,
+  "origin": ["Brazylia", "Afganistan", "Pakistan", "Nigeria", "Mozambik", "USA"],
+  "metaphysical": {
+    "chakra": ["podstawna", "sercowa (różowy)", "wszystkie (arbuzowy)"],
+    "meaning": ["ochrona", "uziemienie", "oczyszczenie", "stabilność", "odpieranie negatywnej energii"],
+    "healing": "silnie chroni przed negatywną energią i EMF, uziemia i stabilizuje, oczyszcza aurę i otoczenie"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["silne chemikalia", "nagłe zmiany temperatury"],
+    "storage": "oddzielnie od innych kamieni"
+  },
+  "keywords": [
+    "ochrona", "uziemienie", "oczyszczenie", "stabilność", "tarcza energetyczna",
+    "odpieranie negatywności", "bezpieczeństwo", "siła", "EMF"
+  ],
+  "price_range": {
+    "low": "dostępny (czarny)",
+    "high": "wysoka półka (rzadkie kolory)"
+  },
+  "common_cuts": ["kaboszon", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["miedź", "srebro"],
+    "other_stones": ["kryształ górski", "obsydian", "hematyt", "labradoryt"]
+  },
+  "zodiac": ["Skorpion", "Koziorożec", "Waga", "Lew"]
+}

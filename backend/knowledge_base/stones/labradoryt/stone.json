@@ -1,0 +1,35 @@
+{
+  "name": "Labradoryt",
+  "name_en": "Labradorite",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "szarozielony z opalizującym połyskiem",
+    "shades": ["ciemnoszary", "szaroczarny", "niebieski połysk (labradorescencja)", "zielony połysk", "złoty połysk"]
+  },
+  "hardness_mohs": 6.5,
+  "origin": ["Kanada (Labrador)", "Finlandia", "Madagaskar", "Rosja", "Meksyk"],
+  "metaphysical": {
+    "chakra": ["trzecie oko", "koronny", "gardłowa"],
+    "meaning": ["transformacja", "intuicja", "ochrona", "magia", "wewnętrzna siła", "przebudzenie"],
+    "healing": "budzi intuicję i ukryte zdolności, chroni aurę przed negatywną energią, wspiera transformację i osobiste przemiany"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["silne chemikalia", "szorstkie czyszczenie"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "transformacja", "intuicja", "magia", "ochrona", "tajemnica",
+    "wewnętrzna siła", "przebudzenie", "jasnowidztwo", "zmiana"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "średnia półka"
+  },
+  "common_cuts": ["kaboszon", "plaster", "surowy"],
+  "pairings": {
+    "metals": ["srebro", "miedź"],
+    "other_stones": ["ametyst", "czarny turmalin", "kryształ górski", "kamień księżycowy"]
+  },
+  "zodiac": ["Skorpion", "Strzelec", "Lew", "Baran"]
+}

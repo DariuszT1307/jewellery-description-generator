@@ -1,0 +1,35 @@
+{
+  "name": "Szmaragd",
+  "name_en": "Emerald",
+  "category": "szlachetny",
+  "color": {
+    "primary": "głęboka zieleń",
+    "shades": ["szmaragdowa zieleń", "ciemnozielony", "żywozielony", "zielony z szarym odcieniem"]
+  },
+  "hardness_mohs": 7.5,
+  "origin": ["Kolumbia", "Zambia", "Brazylia", "Zimbabwe", "Rosja"],
+  "metaphysical": {
+    "chakra": ["sercowa"],
+    "meaning": ["miłość", "obfitość", "mądrość", "uzdrowienie", "równowaga", "dobrobyt"],
+    "healing": "otwiera i leczy serce, przyciąga miłość i dobrobyt, wspiera mądrość emocjonalną i wewnętrzną równowagę"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, delikatna szczoteczka",
+    "avoid": ["ultradźwięki", "silne chemikalia", "bezpośrednie słońce", "nagłe zmiany temperatury"],
+    "storage": "oddzielnie, w miękkiej tkaninie"
+  },
+  "keywords": [
+    "miłość", "obfitość", "mądrość", "serce", "dobrobyt", "uzdrowienie",
+    "równowaga", "wzrost", "nadzieja", "odnowa"
+  ],
+  "price_range": {
+    "low": "średnia półka",
+    "high": "wysoka półka (szlachetny)"
+  },
+  "common_cuts": ["kaboszon", "fasetowany", "surowy"],
+  "pairings": {
+    "metals": ["złoto", "miedź", "srebro"],
+    "other_stones": ["kwarc różowy", "diament", "perła", "ametyst"]
+  },
+  "zodiac": ["Byk", "Bliźnięta", "Rak", "Waga"]
+}

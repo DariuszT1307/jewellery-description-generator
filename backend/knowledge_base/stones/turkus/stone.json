@@ -1,0 +1,35 @@
+{
+  "name": "Turkus",
+  "name_en": "Turquoise",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "turkusowy",
+    "shades": ["błękitny", "niebieskozielony", "zielonkawy", "intensywny turkus"]
+  },
+  "hardness_mohs": 5.5,
+  "origin": ["Iran", "USA", "Chiny", "Meksyk", "Egipt", "Afganistan"],
+  "metaphysical": {
+    "chakra": ["gardłowa", "trzecie oko"],
+    "meaning": ["komunikacja", "ochrona", "uzdrowienie", "mądrość", "spokój", "autentyczność"],
+    "healing": "wspiera szczere wyrażanie siebie, chroni przed negatywną energią i przynosi wewnętrzny spokój"
+  },
+  "care": {
+    "cleaning": "sucha lub lekko wilgotna miękka szmatka",
+    "avoid": ["woda", "chemikalia", "perfumy", "pot", "słońce (odbarwia)"],
+    "storage": "z dala od wilgoci i słońca"
+  },
+  "keywords": [
+    "komunikacja", "ochrona", "spokój", "mądrość", "autentyczność",
+    "uzdrowienie", "intuicja", "wewnętrzna prawda", "podróż"
+  ],
+  "price_range": {
+    "low": "dostępny (imitacje)",
+    "high": "wysoka półka (naturalny perski)"
+  },
+  "common_cuts": ["kaboszon", "plaster", "surowy"],
+  "pairings": {
+    "metals": ["miedź", "srebro"],
+    "other_stones": ["koral", "lapis lazuli", "malachit", "kryształ górski"]
+  },
+  "zodiac": ["Strzelec", "Ryby", "Wodnik", "Bliźnięta"]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Cytryn",
+  "name_en": "Citrine",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "żółty",
+    "shades": ["jasnożółty", "złocisty", "miodowy", "bursztynowy"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Brazylia", "Hiszpania", "Rosja", "Francja", "Madagaskar"],
+  "metaphysical": {
+    "chakra": ["splot słoneczny", "sakralna"],
+    "meaning": ["obfitość", "radość", "kreatywność", "manifestacja", "optymizm", "motywacja"],
+    "healing": "przyciąga obfitość i pozytywną energię, wzmacnia pewność siebie i kreatywność, nie absorbuje negatywnej energii"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["bezpośrednie słońce (może wyblaknąć)", "silne chemikalia"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "obfitość", "radość", "słońce", "kreatywność", "manifestacja",
+    "optymizm", "motywacja", "sukces", "pewność siebie", "pozytywna energia"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "średnia półka"
+  },
+  "common_cuts": ["kaboszon", "fasetowany", "surowy", "geoda"],
+  "pairings": {
+    "metals": ["złoto", "miedź"],
+    "other_stones": ["ametyst", "kryształ górski", "tygrysie oko", "pyrit"]
+  },
+  "zodiac": ["Bliźnięta", "Lew", "Waga", "Baran"]
+}

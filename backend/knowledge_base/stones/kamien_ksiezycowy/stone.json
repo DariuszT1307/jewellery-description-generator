@@ -1,0 +1,35 @@
+{
+  "name": "Kamień księżycowy",
+  "name_en": "Moonstone",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "biały z niebieskim połyskiem",
+    "shades": ["kremowy", "brzoskwiniowy", "biały z adularescencją", "szary", "tęczowy"]
+  },
+  "hardness_mohs": 6,
+  "origin": ["Indie", "Sri Lanka", "Madagaskar", "Mjanma", "Tanzania"],
+  "metaphysical": {
+    "chakra": ["sakralna", "koronny", "trzecie oko"],
+    "meaning": ["intuicja", "kobieca energia", "nowe początki", "równowaga emocjonalna", "cykl", "spokój"],
+    "healing": "harmonizuje emocje i cykl kobiecy, wzmacnia intuicję i kobiecą energię, wspiera nowe początki"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["silne chemikalia", "szorstkie czyszczenie", "nagłe zmiany temperatury"],
+    "storage": "oddzielnie, w miękkiej tkaninie"
+  },
+  "keywords": [
+    "intuicja", "kobiecość", "nowe początki", "spokój", "równowaga",
+    "cykl księżyca", "emocje", "wrażliwość", "delikatność", "magia"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "średnia półka (tęczowy)"
+  },
+  "common_cuts": ["kaboszon", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["srebro", "miedź"],
+    "other_stones": ["kwarc różowy", "ametyst", "labradoryt", "perła"]
+  },
+  "zodiac": ["Rak", "Skorpion", "Waga", "Bliźnięta"]
+}

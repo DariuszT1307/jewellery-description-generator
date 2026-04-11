@@ -3,15 +3,70 @@ import './App.css'
 
 const API_BASE = 'http://127.0.0.1:8000'
 
+/**
+ * Renderuje tekst z prostym formatowaniem markdown:
+ * - **tekst** → <strong>tekst</strong>
+ * - podwójny enter → nowy akapit
+ * - pojedynczy enter → <br />
+ * - linia zaczynająca się od "- " → element listy
+ */
+function renderDescription(text) {
+  if (!text) return null
+
+  const paragraphs = text.split('\n\n')
+
+  return paragraphs.map((para, pIdx) => {
+    const lines = para.split('\n')
+
+    // Sprawdź czy akapit to lista punktorów
+    const isList = lines.every(l => l.trim() === '' || l.trim().startsWith('- '))
+    if (isList && lines.some(l => l.trim().startsWith('- '))) {
+      return (
+        <ul key={pIdx} style={{ margin: '0.4rem 0 0.4rem 1.2rem', padding: 0 }}>
+          {lines
+            .filter(l => l.trim().startsWith('- '))
+            .map((l, lIdx) => (
+              <li key={lIdx}>{applyInline(l.trim().slice(2))}</li>
+            ))}
+        </ul>
+      )
+    }
+
+    // Zwykły akapit z ewentualnymi <br /> między liniami
+    const content = lines.map((line, lIdx) => (
+      <span key={lIdx}>
+        {applyInline(line)}
+        {lIdx < lines.length - 1 && <br />}
+      </span>
+    ))
+
+    return <p key={pIdx} style={{ margin: '0.5rem 0' }}>{content}</p>
+  })
+}
+
+/** Zamienia **tekst** na <strong>tekst</strong> w obrębie jednej linii */
+function applyInline(text) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>
+    }
+    return part
+  })
+}
+
 function App() {
   const [formData, setFormData] = useState({
     productType: 'bracelet',
     stone: '',
+    stone2: '',
     productName: '',
     keywords: '',
     notes: '',
     images: []
   })
+
+  const [twoStones, setTwoStones] = useState(false)
 
   const [stones, setStones] = useState([])
   const [stonesLoading, setStonesLoading] = useState(true)
@@ -71,9 +126,20 @@ function App() {
       return
     }
 
+    if (twoStones && !formData.stone2) {
+      alert('Wybierz drugi kamień lub odznacz opcję "Użyj dwóch kamieni"')
+      return
+    }
+
+    if (twoStones && formData.stone2 === formData.stone) {
+      alert('Drugi kamień musi być inny niż pierwszy')
+      return
+    }
+
     const requestBody = {
       productType: formData.productType,
       stone: formData.stone,
+      ...(twoStones && formData.stone2 ? { stone2: formData.stone2 } : {}),
       productName: formData.productName,
       keywords: formData.keywords || null,
       notes: formData.notes || null,
@@ -167,6 +233,50 @@ function App() {
             )}
           </div>
 
+          <div className="form-group" style={{ flexDirection: 'row', alignItems: 'center', gap: '0.6rem' }}>
+            <input
+              id="twoStones"
+              type="checkbox"
+              checked={twoStones}
+              onChange={e => {
+                setTwoStones(e.target.checked)
+                if (!e.target.checked) setFormData(prev => ({ ...prev, stone2: '' }))
+              }}
+              style={{ width: 'auto', cursor: 'pointer' }}
+            />
+            <label htmlFor="twoStones" style={{ marginBottom: 0, cursor: 'pointer' }}>
+              Użyj dwóch kamieni
+            </label>
+          </div>
+
+          {twoStones && (
+            <div className="form-group">
+              <label htmlFor="stone2">Drugi kamień *</label>
+              {stonesLoading ? (
+                <select disabled><option>Ładowanie kamieni...</option></select>
+              ) : stonesError ? (
+                <select disabled><option>Błąd ładowania</option></select>
+              ) : (
+                <select
+                  id="stone2"
+                  name="stone2"
+                  value={formData.stone2}
+                  onChange={handleInputChange}
+                  required={twoStones}
+                >
+                  <option value="">— wybierz drugi kamień —</option>
+                  {stones
+                    .filter(s => s.value !== formData.stone)
+                    .map(stone => (
+                      <option key={stone.value} value={stone.value}>
+                        {stone.label}
+                      </option>
+                    ))}
+                </select>
+              )}
+            </div>
+          )}
+
           <div className="form-group">
             <label htmlFor="productName">Nazwa robocza *</label>
             <input
@@ -245,15 +355,12 @@ function App() {
           <div className="payload-preview">
             <h2>Wynik wygenerowanego opisu</h2>
             <h3>{generatedResult.title}</h3>
-            <p>{generatedResult.shortDescription}</p>
-            <ul>
-              {generatedResult.bullets.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-            <p>{generatedResult.longDescription}</p>
-            <h4>Specyfikacja</h4>
-            <pre>{JSON.stringify(generatedResult.specs, null, 2)}</pre>
+
+            <h4 style={{ marginTop: '1.2rem', marginBottom: '0.4rem' }}>Krótki opis</h4>
+            <div>{renderDescription(generatedResult.shortDescription)}</div>
+
+            <h4 style={{ marginTop: '1.2rem', marginBottom: '0.4rem' }}>Pełny opis</h4>
+            <div>{renderDescription(generatedResult.longDescription)}</div>
           </div>
         )}
       </main>

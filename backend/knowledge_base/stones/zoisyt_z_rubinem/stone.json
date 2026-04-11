@@ -1,0 +1,35 @@
+{
+  "name": "Zoisyt z rubinem",
+  "name_en": "Ruby in Zoisite",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "zielony z rubinowymi plamami",
+    "shades": ["soczysty zielony", "ciemnozielony", "czerwień rubinu", "czerń hornblendy"]
+  },
+  "hardness_mohs": 6.5,
+  "origin": ["Tanzania", "Indie", "Zimbabwe"],
+  "metaphysical": {
+    "chakra": ["sercowa", "podstawna"],
+    "meaning": ["witalność", "pasja", "miłość", "wzrost", "odwaga", "serce"],
+    "healing": "łączy energię serca z żywotnością ciała, wspiera odwagę w miłości i otwiera na głębokie uczucia"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["ultradźwięki", "silne chemikalia", "nagłe zmiany temperatury"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "witalność", "pasja", "miłość", "serce", "odwaga", "wzrost",
+    "życiowa energia", "jedność duszy i ciała", "transformacja"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "średnia półka"
+  },
+  "common_cuts": ["kaboszon", "surowy", "plaster"],
+  "pairings": {
+    "metals": ["miedź", "złoto", "srebro"],
+    "other_stones": ["kwarc różowy", "garnet", "jadeit", "czarny turmalin"]
+  },
+  "zodiac": ["Baran", "Byk", "Rak", "Skorpion"]
+}

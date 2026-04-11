@@ -1,0 +1,35 @@
+{
+  "name": "Jaspis",
+  "name_en": "Jasper",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "czerwony",
+    "shades": ["czerwony", "brązowy", "żółty", "zielony", "wielobarwny (krajobrazowy)"]
+  },
+  "hardness_mohs": 7,
+  "origin": ["Madagaskar", "Rosja", "Indie", "Brazylia", "USA", "Niemcy"],
+  "metaphysical": {
+    "chakra": ["podstawna", "sakralna"],
+    "meaning": ["uziemienie", "siła", "wytrwałość", "odżywienie", "stabilność", "działanie"],
+    "healing": "odżywia i stabilizuje ciało oraz umysł, daje siłę do działania i wytrwałości w trudnych czasach"
+  },
+  "care": {
+    "cleaning": "ciepła woda z mydłem, miękka szczoteczka",
+    "avoid": ["silne chemikalia", "długa ekspozycja na słońce"],
+    "storage": "oddzielnie od kamieni o wyższej twardości"
+  },
+  "keywords": [
+    "siła", "uziemienie", "wytrwałość", "stabilność", "odżywienie",
+    "działanie", "ochrona", "odwaga", "równowaga"
+  ],
+  "price_range": {
+    "low": "bardzo dostępny",
+    "high": "niska półka"
+  },
+  "common_cuts": ["kaboszon", "plaster", "surowy", "fasetowany"],
+  "pairings": {
+    "metals": ["miedź", "srebro", "złoto"],
+    "other_stones": ["agat", "hematyt", "tygrysie oko", "karneol"]
+  },
+  "zodiac": ["Baran", "Skorpion", "Koziorożec", "Byk"]
+}

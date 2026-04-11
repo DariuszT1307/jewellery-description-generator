@@ -1,0 +1,35 @@
+{
+  "name": "Amazonit",
+  "name_en": "Amazonite",
+  "category": "półszlachetny",
+  "color": {
+    "primary": "niebieskozielony",
+    "shades": ["miętowy", "turkusowy", "bladozielony", "szmaragdowozielony z białymi żyłkami"]
+  },
+  "hardness_mohs": 6,
+  "origin": ["Rosja", "USA (Kolorado)", "Madagaskar", "Brazylia", "Etiopia"],
+  "metaphysical": {
+    "chakra": ["sercowa", "gardłowa"],
+    "meaning": ["harmonia", "prawda", "spokój", "komunikacja", "autentyczność", "balans"],
+    "healing": "uspokaja system nerwowy, wspiera szczere wyrażanie własnej prawdy i harmonizuje emocje"
+  },
+  "care": {
+    "cleaning": "sucha szmatka lub lekko wilgotna, delikatna szczoteczka",
+    "avoid": ["silne chemikalia", "szorstkie materiały", "długa ekspozycja na wodę"],
+    "storage": "oddzielnie od twardszych kamieni"
+  },
+  "keywords": [
+    "harmonia", "prawda", "spokój", "komunikacja", "autentyczność",
+    "balans", "uspokojenie", "wewnętrzna siła", "jasność umysłu"
+  ],
+  "price_range": {
+    "low": "dostępny",
+    "high": "niska-średnia półka"
+  },
+  "common_cuts": ["kaboszon", "plaster", "surowy"],
+  "pairings": {
+    "metals": ["miedź", "srebro"],
+    "other_stones": ["turkus", "labradoryt", "kryształ górski", "kwarc różowy"]
+  },
+  "zodiac": ["Panna", "Wodnik", "Baran", "Byk"]
+}

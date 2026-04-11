@@ -1,33 +1,17 @@
 {
   "_meta": {
-    "focus": "prezent / universalny",
-    "tone": "neutralny, elegancki",
-    "target_audience": "kupujący prezent gdy nie wiedzą co wybrać"
+    "focus": "prezent / universalny wybór",
+    "tone": "otwarty, universalny",
+    "target_audience": "osoby szukające wyjątkowego, znaczącego prezentu"
   },
   "input": {
     "productType": "bransoletka",
     "stone": "kryształ górski",
-    "productName": "Miedziana bransoletka z kryształem górskim – prezent",
-    "keywords": "prezent universalny, handmade, kryształ górski",
-    "notes": "Wire wrapping, miedź, kryształ górski, pudełko prezentowe"
+    "productName": "Miedziana bransoletka z kryształem górskim"
   },
   "output": {
-    "title": "Bransoletka z kryształem górskim – universalny prezent handmade",
-    "shortDescription": "Miedziana bransoletka z kryształem górskim – miedź wykazuje właściwości antybakteryjne i przeciwzapalne, w biżuterii wzmacnia działanie kamieni.\nKryształ górski to kamień, który pasuje do każdego – wzmacnia intencje i oczyszcza energię, niezależnie od tego, czego ktoś potrzebuje.\nPasuje do każdego znaku zodiaku – universalny wybór.",
-    "bullets": [
-      "Gotowa do podarowania – zapakowana w ozdobne pudełko prezentowe",
-      "Naturalny kryształ górski – universalny kamień, pasuje do każdego",
-      "Miedź wire wrapping – antybakteryjna, wzmacnia działanie kamienia",
-      "Surowy kryształ – naturalne pęknięcia i inkluzje, każdy wygląda inaczej",
-      "Możliwość dołączenia karteczki z życzeniami"
-    ],
-    "longDescription": "Miedziana, ręcznie robiona bransoletka z kryształem górskim to prezent handmade, który zawsze trafia. Surowy kryształ i miedź wire wrapping – proste, eleganckie, pasujące do każdego stylu.\n\nTo talizman intencji dla każdego. Kryształ górski wzmacnia to, co w niego włożysz – nosząc go można sobie „zaprogramować" życzenie lub intencję. To prezent, który mówi: „życzę Ci wszystkiego, czego potrzebujesz". Universalny – bo nie każdy rezonuje z tym samym kamieniem, ale kryształ górski pasuje do każdego.\n\nWłaściwości miedzi\nMiedź wykazuje właściwości antybakteryjne i przeciwzapalne. W biżuterii wzmacnia działanie kamieni i podkreśla ich naturalny charakter.\n\nSzczegóły produktu\nmateriał: miedź\nkamień: naturalny kryształ górski\nwykonanie: ręczne, wire wrapping\nobwód: ok. 17 cm (możliwość dopasowania)\n\nDla kogo\nDla każdego – szczególnie gdy nie wiesz, jaki kamień wybrać. Kryształ górski nie pomyli.\nPasuje do każdego znaku zodiaku.\n\nStyl\nPasuje do każdego stylu – minimalistycznego, boho i naturalnego.\nDoskonały na urodziny, Dzień Matki lub „po prostu tak" – zawsze właściwy wybór.\nKolory na zdjęciach mogą się różnić, ponieważ miedź jest wrażliwa na światło i nawet zmiana otoczenia i tła wpływa na jej odcień.",
-    "specs": {
-      "materiał": "miedź",
-      "kamień": "naturalny kryształ górski",
-      "wykonanie": "ręczne, wire wrapping",
-      "obwód": "ok. 17 cm (możliwość dopasowania)",
-      "opakowanie": "ozdobne pudełko prezentowe"
-    }
+    "title": "Bransoletka z kryształem górskim w miedzianym splocie",
+    "shortDescription": "Bransoletka z kryształem górskim w miedzianym splocie\n\nRęcznie robiona bransoletka z naturalnym kryształem górskim – wyjątkowy prezent dla niej. Lekka i wygodna w noszeniu. Miedź działa antybakteryjnie i wzmacnia działanie kamienia.\n\n**Kryształ górski** wzmacnia intencje, oczyszcza energię i poprawia jasność myślenia – kamień universalny.\n\nDoskonały prezent dla niej.\nKryształ górski pasuje do każdego znaku – jeśli czujesz przyciąganie, to jest dla Ciebie.",
+    "longDescription": "Ręcznie robiona bransoletka z naturalnym kryształem górskim i miedzią. Biżuteria boho wykonana techniką wire wrapping.\n\n**Miedź** – naturalny przewodnik energii\n- Działa antybakteryjnie i przeciwzapalnie\n- Wzmacnia działanie kamieni\n- Wspiera organizm\n\n**Kryształ górski** – kamień oczyszczenia i wzmocnienia\n- Wzmacnia intencje i cele, które w niego włożysz\n- Oczyszcza energię i przestrzeń wokół siebie\n- Poprawia jasność myślenia i wspiera koncentrację\n\n**Materiał:** czysta miedź, naturalny kryształ górski\n**Rozmiar:** obwód ok. 17 cm z możliwością regulacji\n**Wykonanie:** 100% ręcznie robiony\n**Technika:** wire wrapping\n\nKryształ górski pasuje do każdego znaku zodiaku.\nDoskonały prezent dla niej – szczególnie dla kogoś, kto ceni naturalne kamienie i ręczne rzemiosło.\nBiżuteria boho pasująca do casualowych i eleganckich stylizacji.\n\n❣️ Kolory na zdjęciach mogą się różnić w zależności od ustawień monitora. Miedź reaguje na światło i otoczenie, co wpływa na jej odcień."
   }
 }
